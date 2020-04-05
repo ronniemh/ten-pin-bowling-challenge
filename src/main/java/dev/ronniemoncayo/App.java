@@ -1,13 +1,13 @@
 package dev.ronniemoncayo;
 
 /**
- * Hello world!
- *
+ * Class containing main method
+ * @author Ronnie Moncayo
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       
     }
 }
