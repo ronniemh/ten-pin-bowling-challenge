@@ -4,7 +4,7 @@ import java.nio.file.Path;
 
 public class ChallengeCaseFileReader extends GenericBowlingFileReader {
 
-    private static final String LINE_SEPARATOR = "/t";
+    private static final String LINE_SEPARATOR = "\\t";
     private static final String PINS_KNOCKED_DOWN_REGEX = "([0-9]|10|F)";
 
     protected ChallengeCaseFileReader(Path filePath) {
