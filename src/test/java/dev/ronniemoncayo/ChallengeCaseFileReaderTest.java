@@ -26,4 +26,26 @@ public class ChallengeCaseFileReaderTest {
         assertEquals(false, ChallengeCaseFileReader.validateKnockedDownPins(String.valueOf("11")));
     }
 
+    @Test
+    public void testValidationPinNegativeNumberArgument() {
+
+        assertEquals(false, ChallengeCaseFileReader.validateKnockedDownPins(String.valueOf("-6")));
+    }
+
+    @Test
+    public void testValidationPinEmptyArgument() {
+
+        assertEquals(false, ChallengeCaseFileReader.validateKnockedDownPins(String.valueOf("")));
+    }
+
+    @Test
+    public void testMapLineToFileBlowingGameStruct() {
+        ChallengeCaseFileReader challengeCaseFileReader = new ChallengeCaseFileReader(null);
+        String line = "ronnie\t2";
+        FileBlowingGameStruct fileBlowingGameStruct = challengeCaseFileReader.mapFileLine(line);
+        assertEquals("ronnie", fileBlowingGameStruct.getPlayerName());
+        assertEquals("2", fileBlowingGameStruct.getPinsKnockedDown());
+    }
+    
+
 }
