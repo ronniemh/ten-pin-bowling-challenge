@@ -26,6 +26,7 @@ public abstract class GenericBowlingFileReader{
           .map(this::mapFileLine).collect(Collectors.toList());
     }
      
+    /* The class that extends the abstract class must know how map data to transform to FileBlowingGameStruct */
     protected abstract FileBlowingGameStruct mapFileLine(String line);
 
 }

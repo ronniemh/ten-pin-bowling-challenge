@@ -26,10 +26,10 @@ public class TenthFrame extends Frame {
             }
         }
         sb.append("\t");
-        sb.append(super.getSecondRoll().isFoul() ? "F" : super.getSecondRoll().getKnockedPins());
+        sb.append(super.getSecondRoll().isFoul() ? "F" : (super.getSecondRoll().getKnockedPins() == 10) ? "X" : super.getSecondRoll().getKnockedPins());
         if(getThirdRoll() != null){
             sb.append("\t");
-            sb.append(getThirdRoll().isFoul()? "F" : getThirdRoll().getKnockedPins());
+            sb.append(getThirdRoll().isFoul()? "F" :  (getThirdRoll().getKnockedPins() == 10) ? "X" : getThirdRoll().getKnockedPins());
         }
        return sb.toString();
     }

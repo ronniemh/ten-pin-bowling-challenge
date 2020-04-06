@@ -1,7 +1,7 @@
 package dev.ronniemoncayo;
 
 /**
- * Structure to which some type of valid information entry will be converted
+ * Final Structure to which some type of valid information entry will be converted
  * (e.g., text file, database, etc...)
  */
 public class FileBlowingGameStruct {

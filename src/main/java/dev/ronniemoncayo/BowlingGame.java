@@ -2,17 +2,27 @@ package dev.ronniemoncayo;
 
 import java.util.List;
 
+/**
+ * Abstract class for BowlingGame, has the most important information
+ * (Logic Game)
+ */
 public abstract class BowlingGame {
 
-    private static final int MAX_FRAME_NUMNBER = 10;
+    private static final int MAX_FRAME_NUMBER = 10;
+
     private final String playerName;
+
     private List<Frame> frames;
 
     public BowlingGame(String playerName) {
         this.playerName = playerName;
     }
 
-    public abstract List<Frame> createFrames() throws ExceedsNumberGamesException;
+    /**
+     * The class that extends the abstract class must know how to get the frames
+     * @throws PinThrowingExceedsException
+     */
+    public abstract List<Frame> createFrames() throws PinThrowingExceedsException;
 
     public String getPlayerName() {
         return playerName;
@@ -26,8 +36,8 @@ public abstract class BowlingGame {
         this.frames = frames;
     }
 
-    public static int getMaxFrameNumnber() {
-        return MAX_FRAME_NUMNBER;
+    public static int getMaxFrameNumber() {
+        return MAX_FRAME_NUMBER;
     }
 
 }
