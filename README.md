@@ -7,9 +7,9 @@ This is a maven console java app for score a game of ten-pin bowling from txt fi
 For this project you need to have Java 8+ maven installed [Maven](https://maven.apache.org/)
 
 ### Make sure to have JDK8 installed
-The latest binary can be found here: http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html
+The latest binary can be found [here](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
 
-You can download a preview version here: https://jdk8.java.net/
+You can download a preview version [here](https://jdk8.java.net/)
 
 ### Run
 ```sh
