@@ -22,7 +22,7 @@ public class NormalFrameTest {
 
     @Test
     public void testIsNormal(){
-        normalFrame = new NormalFrame(1, new Roll(5, false),new Roll(2, false));
+        normalFrame = new NormalFrame(1, new Roll(10, false),new Roll(2, false));
         assertEquals(true, normalFrame.isNormal());
     }
 
